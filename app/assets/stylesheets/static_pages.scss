@@ -1,3 +1,37 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	color: red;
+}
+
+body {
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #101010;
+  color: #9d9d9d;
+}
+
+.lorem-ipsum {
+	width: 50%;
+}
+
+@media (max-width: 768px) {
+	.home-disapp {
+		display: none;
+	}
+}
