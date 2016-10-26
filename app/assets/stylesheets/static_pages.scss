@@ -1,6 +1,4 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
 
 h1 {
 	color: red;
@@ -26,12 +24,23 @@ footer {
   color: #9d9d9d;
 }
 
-.lorem-ipsum {
-	width: 50%;
-}
+
+/*NAVBAR start*/
 
 @media (max-width: 768px) {
 	.home-disapp {
 		display: none;
 	}
 }
+
+nav a {
+	font-size: 1.3em;
+}
+
+#brand-color {
+	color: white;
+}
+
+
+/*INDEX page start*/
+
