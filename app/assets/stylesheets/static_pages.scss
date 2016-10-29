@@ -120,6 +120,7 @@ nav a {
 }
 
 /* Grow */
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -131,7 +132,34 @@ nav a {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+
+/*CONTACT page*/
+
+#success_message{
+	display: none;
+}
+
+.well {
+	background-color: #d9ffb3;
+}
+
+.reg-address {
+	display: block;
+	width: 100%;
+	margin: 3px auto;
+	margin-top: 53px;
+	background-color: #d9ffb3;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+}
+
+.reg-address > p:first-child {
+	text-decoration: underline;
+	font-size: 1.4em;
 }
