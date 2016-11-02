@@ -1,30 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<div class="container product-title"><h3>Products</h3></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="row">
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% @products.each do |product| %>
+      
+    <div class="container col-xs-12 col-md-6 product-unit">
+      <%= image_tag product.image_url, :class => "img-responsive product-pic" %>
+      <div class="product-describe"><h3><%= product.name %></h3>
+      <p><%= product.description %></p>
+      </div>
+      <%= link_to 'Show', product %>
+      <%= link_to 'Edit', edit_product_path(product) %>
+      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div> <!-- end container -->
+  <% end %>
+</div> <!-- end row -->
+
 
 <br>
 
