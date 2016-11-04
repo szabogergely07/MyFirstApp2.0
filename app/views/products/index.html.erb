@@ -10,6 +10,7 @@
       <%= image_tag product.image_url, :class => "img-responsive product-pic" %>
       <div class="product-describe"><h3><%= product.name %></h3>
       <p><%= product.description %></p>
+      <p><%= product.color %></p>
       </div>
       <%= link_to 'Show', product %>
       <%= link_to 'Edit', edit_product_path(product) %>
