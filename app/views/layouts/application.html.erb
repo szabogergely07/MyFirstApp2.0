@@ -25,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="<%= static_pages_index_path %>" class="navbar-left"><%= image_tag("bikelove.png") %></a>
+      <a href="<%= static_pages_index_path %>" gitclass="navbar-left"><%= image_tag("bikelove.png") %></a>
       <ul class="nav navbar-nav navbar-left home-disapp">
       	<li><a id= "brand-color">BikeWien</a></li>
       </ul>
@@ -34,6 +34,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+      	<li><%= link_to 'Products', products_path %></li>
       	<li><%= link_to 'Bikes', static_pages_bikes_path %></li>
         <li><%= link_to 'About', static_pages_about_path %></li>
         <li><%= link_to 'Contact', static_pages_contact_path %></li>
