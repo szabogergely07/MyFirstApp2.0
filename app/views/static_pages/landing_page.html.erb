@@ -4,16 +4,18 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-  	<% @products.each_with_index do |product, index| %>
-  	<%= content_tag :li, data: {target: "#carousel-example-generic", slide_to: index}, class: (index == 0 ? "active" : nil) %>
+  	 <% counter = 0 %>
+    <% @products.each do |product| %>
+      <li data-target="#carousel-example-generic" data-slide-to="<%= counter %>"></li>
+      <% counter += 1 %>
     <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <% @products.each_with_index do |product, index| %>
-    <div class="item<%= " active" if index == 0 %>">
-      <%= image_tag(product.image_url) %>
+    <% @products.each do |product| %>
+    <div class="item<%= " active" if product == @products.first %>">
+      <%= image_tag(product.image_url, class: "img-responsive") %>
       <div class="carousel-caption">
         <%= product.name %>
       </div>
