@@ -183,22 +183,22 @@ nav a {
 }
 
 .carousel-indicators li {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: #d1e0e0;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);   
+	display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #d1e0e0;
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);   
 }
 .carousel-indicators .active {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    background-color: #66ff66;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: #66ff66;
 }
 
 .carousel-inner {
