@@ -163,3 +163,57 @@ nav a {
 	text-decoration: underline;
 	font-size: 1.4em;
 }
+
+/*ABOUT page*/
+
+
+/*Landing page*/
+
+.carousel-div {
+	margin-top: 40px;
+	height: 400px;
+}
+
+.img-format {
+	max-height: 300px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #d1e0e0;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);   
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: #66ff66;
+}
+
+.carousel-inner {
+	padding-bottom: 60px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-caption {
+	bottom: -50px;
+	color: black;
+}
+
+.carousel-control .glyphicon-chevron-right, .glyphicon-chevron-left, .carousel-control .icon-prev {
+	color: green;
+}

@@ -1,10 +1,10 @@
-<h2>Featured Products</h2>
+<div class="container product-title"><h2>Featured Products</h2></div>
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide carousel-div" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-  	 <% counter = 0 %>
+  	<% counter = 0 %>
     <% @products.each do |product| %>
       <li data-target="#carousel-example-generic" data-slide-to="<%= counter %>"></li>
       <% counter += 1 %>
@@ -15,7 +15,7 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url, class: "img-responsive") %>
+      <%= image_tag(product.image_url, class: "img-responsive img-format") %>
       <div class="carousel-caption">
         <%= product.name %>
       </div>
