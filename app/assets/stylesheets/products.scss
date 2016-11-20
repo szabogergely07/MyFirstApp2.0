@@ -11,9 +11,15 @@
 }
 
 .product-title {
+	width: 100%;
+	margin: 30px auto 5px auto;
+	text-align: center;
+}
+
+.product-title h2 {
 	width: 50%;
 	margin: 10px auto;
-	text-align: center;
+	padding-bottom: 10px;
 	border-bottom: 1px solid grey;
 }
 
@@ -32,11 +38,16 @@
 }
 
 .new-prod {
-	position: fixed;
-	top: 70px;
-	right: 50px;
-	text-align: right;
+	width: 100%;
+	text-align: center;
 }
+
+.new-prod p {
+	margin-top: 5px;
+	border-bottom: 1px solid grey;
+}
+
+
 
 .hvr-grow a {
 	text-decoration: none;
