@@ -1,42 +1,62 @@
-<%= form_for(product) do |f| %>
-  <% if product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+<div class="container form-space">
+  <form class="form-horizontal">
 
-      <ul>
-      <% product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+  <%= form_for(product) do |f| %>
+    <% if product.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+        <ul>
+        <% product.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    
+     
+  <div class="form-group">
+    <%= f.label :name, :class => "control-label col-sm-2" %>
+    <div class="col-sm-6">
+    <%= f.text_field :name, :class => "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+  <div class="form-group">
+    <%= f.label :description, :class => "control-label col-sm-2" %>
+    <div class="col-sm-6">
+    <%= f.text_area :description, :class => "form-control", :style => "resize: none" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url %>
+  <div class="form-group">
+    <%= f.label :image_url, :class => "control-label col-sm-2" %>
+    <div class="col-sm-6">
+    <%= f.text_field :image_url, :class => "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
+  <div class="form-group">
+    <%= f.label :color, :class => "control-label col-sm-2" %><br>
+    <div class="col-sm-6">
+    <%= f.text_field :color, :class => "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+  <div class="form-group">
+    <%= f.label :price, :class => "control-label col-sm-2" %><br>
+    <div class="col-sm-6">
+    <%= f.text_field :price, :class => "form-control" %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit %>
+    </div>
   </div>
-<% end %>
+    
+  <% end %>
+  </form>
+</div>
