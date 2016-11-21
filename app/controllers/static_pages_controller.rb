@@ -1,5 +1,8 @@
 class StaticPagesController < ApplicationController
   def index
+  end
+
+  def about
   	redirect_to "/static_pages/landing_page"
   end
 
