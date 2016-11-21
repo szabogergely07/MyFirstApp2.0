@@ -72,5 +72,5 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :description, :image_url, :color, :price)
     end
 
-    @product = Product.order("name")
+    
 end

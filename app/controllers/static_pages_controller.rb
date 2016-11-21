@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
+  	redirect_to "/static_pages/landing_page"
   end
 
   # Dinamically show products in carousel depends on total amount
