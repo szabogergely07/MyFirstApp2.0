@@ -35,6 +35,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= form_tag("/products", method: "get", class: "navbar-form", role: "search") do %>
+            <div class="form-group">
+              <%= text_field_tag(:q, nil, placeholder: "Search for a Bike", class: "form-control") %>
+            </div>
+              <%= submit_tag("Search", type: "submit", class: "btn btn-default") %>
+          <% end %>
+        </li>
         <li><%= link_to 'Featured', static_pages_landing_page_path %></li>
       	<li><%= link_to 'Products', products_path %></li>
       	<li><%= link_to 'Bikes', static_pages_bikes_path %></li>
