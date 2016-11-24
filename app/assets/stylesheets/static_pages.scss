@@ -144,7 +144,7 @@ nav a {
 
 /*CONTACT page*/
 
-#success_message{
+#success_message {
 	display: none;
 }
 
@@ -165,6 +165,23 @@ nav a {
 .reg-address > p:first-child {
 	text-decoration: underline;
 	font-size: 1.4em;
+}
+
+.glyphicon.glyphicon-circle-arrow-left {
+	font-size: 1.5em;
+}
+
+.back-button {
+	background-color: #e6e6e6;
+}
+
+.back-button:hover {
+	background-color: #ccffcc;
+}
+
+.back-button span a {
+	color: #404040;
+	text-decoration: none;
 }
 
 /*ABOUT page*/
@@ -220,3 +237,4 @@ nav a {
 .carousel-control .glyphicon-chevron-right, .glyphicon-chevron-left, .carousel-control .icon-prev {
 	color: green;
 }
+
