@@ -24,7 +24,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter First Name" %>
+  <%= text_field_tag :name, nil, class: "form-control name-box", placeholder: "Enter First Name" %>
     </div>
   </div>
 </div>
@@ -47,7 +47,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Your Email Address" %>
+  <%= text_field_tag :email, nil, class: "form-control email-box", placeholder: "Enter Your Email Address" %>
     </div>
   </div>
 </div>
@@ -81,11 +81,11 @@
 <!-- Text area -->
   
 <div class="form-group">
-  <%= label_tag :message, "Message", class: "col-md-4 control-label" %>
+  <%= label_tag :message, "Message", class: "col-md-4 control-label required" %>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	<%= text_area_tag :message, nil, style: "resize: none", class: "form-control", placeholder: "Your message", cols: "30", rows: "5" %>
+        	<%= text_area_tag :message, nil, style: "resize: none", class: "form-control message-box", placeholder: "Your message", cols: "30", rows: "5", required: "true" %>
   </div>
   </div>
 </div>
@@ -94,7 +94,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <%= submit_tag "Send", type: "submit", class: "btn btn-warning" %>
+    <%= submit_tag "Send", type: "submit", class: "btn btn-warning", id: "submit-button" %>
     <span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
