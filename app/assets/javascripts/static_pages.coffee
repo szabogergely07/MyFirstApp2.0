@@ -8,7 +8,7 @@ $('#submit-button').on 'click', ->
   formName = $('.name-box').val()
   formEmail = $('.email-box').val()
   if comment == ''
-    redBorder.show()
+    redBorder
   else
   return
 
