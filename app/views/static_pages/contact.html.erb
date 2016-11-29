@@ -43,11 +43,11 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <%= label_tag :email, "E-mail Address", class: "col-md-4 control-label" %>  
+  <%= label_tag :email, "E-mail Address", class: "col-md-4 control-label required-field" %>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <%= text_field_tag :email, nil, class: "form-control email-box", placeholder: "Enter Your Email Address" %>
+  <%= text_field_tag :email, nil, class: "form-control email-box", type: "email", placeholder: "Enter Your Email Address", required: "true" %>
     </div>
   </div>
 </div>
@@ -81,7 +81,7 @@
 <!-- Text area -->
   
 <div class="form-group">
-  <%= label_tag :message, "Message", class: "col-md-4 control-label required" %>
+  <%= label_tag :message, "Message", class: "col-md-4 control-label required-field" %>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -94,8 +94,8 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <%= submit_tag "Send", type: "submit", class: "btn btn-warning", id: "submit-button" %>
-    <span class="glyphicon glyphicon-send"></span></button>
+    <%= button_tag "Send", type: "submit", class: "btn btn-warning", id: "submit-button" %>
+    <span class="glyphicon glyphicon-send"></span>
   </div>
 </div>
 
