@@ -10,3 +10,6 @@ $('#submit-button').on 'click', ->
     $('.message-box').css 'border', '2px solid red'
   else
   return
+$('.message-box').keypress ->
+  $('.message-box').css('border', '2px solid red').hide()
+  return
