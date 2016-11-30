@@ -15,7 +15,3 @@
 //= require turbolinks
 //= require_tree .
 
-$('#submit-button').on('click', function() {
-	var comment = $('.message-box').val();
-  (comment === "") && ($(".message-box").css("border", "2px solid red"));
-});
