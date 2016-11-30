@@ -8,6 +8,4 @@ $('#submit-button').on 'click', ->
   formEmail = $('.email-box').val()
   if comment == ''
     $('.message-box').css 'border', '2px solid red'
-  else
-    return
-  return
+  
