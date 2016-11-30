@@ -9,4 +9,5 @@ $('#submit-button').on 'click', ->
   if comment == ''
     $('.message-box').css 'border', '2px solid red'
   else
+    return
   return
