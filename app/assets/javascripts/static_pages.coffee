@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $('#submit-button').on 'click', ->
-  if $('.message-box').val() == ''
-    return $('.message-box').css 'border', '2px solid red'
-  
+  comment = $('.message-box').val()
+  if comment == '' then $('.message-box').css('border', '2px solid red')
+  return
