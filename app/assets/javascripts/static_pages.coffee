@@ -3,9 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $('#submit-button').on 'click', ->
-  comment = $('.message-box').val()
-  formName = $('.name-box').val()
-  formEmail = $('.email-box').val()
-  if comment == ''
+  if $('.message-box').val() == ''
     $('.message-box').css 'border', '2px solid red'
-  
+  return
