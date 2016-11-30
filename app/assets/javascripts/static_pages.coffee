@@ -4,5 +4,5 @@
 
 $('#submit-button').on 'click', ->
   comment = $('.message-box').val()
-  comment == '' and $('.message-box').css('border', '2px solid red')
+  if comment == '' then $('.message-box').css('border', '2px solid red') else null
   return
