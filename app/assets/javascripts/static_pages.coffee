@@ -2,7 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$('#submit-button').on 'click', ->
-  comment = $('.message-box').val()
-  if comment == '' then $('.message-box').css('border', '2px solid red') else null
-  return
+
+comment == $('#message-box').val()
+if comment == ''
+  $('#message-box').addClass 'redborder'
+else
+  $('#message-box').removeClass 'redborder'

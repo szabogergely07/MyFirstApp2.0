@@ -85,7 +85,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	<%= text_area_tag :message, nil, style: "resize: none", class: "form-control message-box", placeholder: "Your message", cols: "30", rows: "5", required: "true" %>
+        	<%= text_area_tag :message, nil, style: "resize: none", class: "form-control", id: "message-box", placeholder: "Your message", cols: "30", rows: "5", required: "true" %>
   </div>
   </div>
 </div>
@@ -94,7 +94,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <%= button_tag "Send", type: "submit", class: "btn btn-warning", id: "submit-button" %>
+    <%= submit_tag "Send", type: "submit", class: "btn btn-warning", id: "submit-button" %>
     <span class="glyphicon glyphicon-send"></span>
   </div>
 </div>
