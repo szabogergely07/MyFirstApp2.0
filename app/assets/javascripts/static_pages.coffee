@@ -5,7 +5,7 @@
 $('#submit-button').on 'click', ->
 	comment = $('#message-box').val()
 	if comment == ''
-	  $('#message-box').addClass 'redborder'
+	  $('textarea').addClass 'redborder'
 	else
-	  $('#message-box').removeClass 'redborder'
+	  $('textarea').removeClass 'redborder'
 	return
