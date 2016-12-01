@@ -3,8 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-comment == $('#message-box').val()
-if comment == ''
-  $('#message-box').addClass 'redborder'
-else
-  $('#message-box').removeClass 'redborder'
+$('#submit-button').on 'click', ->
+  comment = $('#message-box').val()
+  if comment == ''
+ 	 $('#message-box').css 'border', '2px solid red'
+  else
+ 	return
