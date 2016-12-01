@@ -3,10 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $('#submit-button').on 'click', ->
-comment = $('#message-box').val()
-
-if comment == ''
-  $('#message-box').addClass 'redborder'
-else
-  $('#message-box').removeClass 'redborder'
-return
+	comment = $('#message-box').val()
+	if comment == ''
+	  $('#message-box').addClass 'redborder'
+	else
+	  $('#message-box').removeClass 'redborder'
+	return
