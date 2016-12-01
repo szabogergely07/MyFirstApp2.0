@@ -3,7 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-comment == $('#message-box').val()
+comment == $('#message-box').val();
+
 if comment == ''
   $('#message-box').addClass 'redborder'
 else
