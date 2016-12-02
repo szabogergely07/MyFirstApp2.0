@@ -102,3 +102,27 @@
 </fieldset>
 <% end %>
 </div>
+
+<script>
+  // Makes red border for message-box when empty
+  $('#submit-button').on('click', function() {
+    var comment;
+    comment = $('#message-box').val();
+    if (comment === "") {
+      $('#message-box.form-control').focus(function() {
+        $(this).css({'border-color': 'red', 'box-shadow': 'inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)'})
+      });
+    } else {
+      return;
+    }
+    // Makes green border for message-box when typing
+    $('#message-box').on('keypress', function() {
+      $('#message-box.form-control').focus(function() {
+        $(this).css({'border-color': 'green', 'box-shadow': 'inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)'})
+      });
+    });
+  });
+
+  
+
+</script>
