@@ -15,6 +15,7 @@
 </head>
 <body>
 
+
 <!-- NAVBAR start -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
@@ -48,10 +49,18 @@
       	<li><%= link_to 'Bikes', static_pages_bikes_path %></li>
         <li><%= link_to 'About', static_pages_about_path %></li>
         <li><%= link_to 'Contact', static_pages_contact_path %></li>
+        <li>
+          <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+          <% else %>
+            <%= link_to('Login', new_user_session_path) %>
+          <% end %>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav> <!-- NAVBAR end -->
+
 
 <%= yield %>
 

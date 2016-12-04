@@ -1,0 +1,27 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.signin-center {
+	width: 25%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.checkbox input[type=checkbox] {
+	position: absolute;
+}
+
+.field.form-group {
+	margin: 0;
+	padding: 0;
+}
+
+.checkbox label {
+	margin: 10px 0;	
+}
+
+.field.form-group .form-control {
+	height: 45px;
+}
