@@ -43,6 +43,10 @@ nav a {
 	color: white;
 }
 
+.navbar-fixed-top .navbar-collapse {
+	max-height: none;
+}
+
 /*INDEX page start*/
 
 .index-page {
