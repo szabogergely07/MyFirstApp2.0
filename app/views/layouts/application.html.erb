@@ -37,6 +37,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
+          <% if user_signed_in? %>
+            <%= link_to('MyAccount', edit_user_registration_path) %>
+          <% end %>
+        </li>
+        <li>
           <%= form_tag("/products", method: "get", class: "navbar-form", role: "search") do %>
             <div class="form-group">
               <%= text_field_tag(:q, nil, placeholder: "Search for a Bike", class: "form-control") %>
