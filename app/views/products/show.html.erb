@@ -3,7 +3,7 @@
 <%= render partial: "new_comment", locals: {product:@product} %>
 
 <div class="container col-md-6 comment-box">
-	<div class="rated" data-score="<%= @product.average_rating %>">Average Rating </div>
+	<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 	<div class="container new-prod">
 		<h3>Reviews</h3>
 	</div>
