@@ -9,4 +9,5 @@
 		<h3>Reviews</h3>
 	</div>
 		<%= render partial: "comments", locals: {product:@product} %>
+		<%= will_paginate @comments, :class => 'container' %>
 </div>
