@@ -1,1 +1,13 @@
- <%= render partial: "product", locals: {product:@product} %>
+<%= render partial: "product", locals: {product:@product} %>
+
+<div class="conatainer clearfix col-xs-12 col-md-6 comment-box">
+<%= render partial: "new_comment", locals: {product:@product} %>
+
+
+	<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+	<div class="container new-prod">
+		<h3>Reviews</h3>
+	</div>
+		<%= render partial: "comments", locals: {product:@product} %>
+		<%= will_paginate @comments, :class => 'container' %>
+</div>
