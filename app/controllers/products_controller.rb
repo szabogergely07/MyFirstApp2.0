@@ -85,8 +85,4 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :description, :image_url, :color, :price)
     end
 
-    rescue_from CanCan::AccessDenied do |exception|
-    redirect_to main_app.products_url, :alert => exception.message
-    end
-
 end
