@@ -7,6 +7,9 @@ class Ability
     	can :manage, :all
     else
     	can :read, :all
+    	cannot :manage, User
+    	can :manage, User, :id => user.id
+    	cannot :index, User
     end
   end
   
