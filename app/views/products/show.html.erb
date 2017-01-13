@@ -1,10 +1,16 @@
 <%= render partial: "product", locals: {product:@product} %>
 
+
 <div class="conatainer clearfix col-xs-12 col-md-6 comment-box">
 <%= render partial: "new_comment", locals: {product:@product} %>
 
 
 	<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
+	<%= form_tag "/payments/create" do %>
+  <%= render partial: "shared/stripe_checkout_button" %>
+	<% end %>
+
 	<div class="container new-prod">
 		<h3>Reviews</h3>
 	</div>
