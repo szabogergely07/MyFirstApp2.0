@@ -8,6 +8,10 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :payments
+
+  post 'payments/create'
+
   get 'static_pages/bikes'
 
   get 'static_pages/about'
