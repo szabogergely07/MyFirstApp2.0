@@ -1,5 +1,5 @@
 <div class="container clearfix col-xs-12 col-md-6 product-unit">
-  <div><%= image_tag product.image_url, :class => "img-responsive product-pic" %></div>
+  <div><%= image_tag product.image_url, class: "img-responsive product-pic img-zoom", data_zoom_image: product.image_url %></div>
   <div class="product-describe">
     <h3><%= product.name %></h3>
     <p><%= product.description %></p>
