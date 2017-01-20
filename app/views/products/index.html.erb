@@ -7,11 +7,12 @@
 
 <div class="row">
   <div class="container">
-
-    <% @products.each do |product| %>
-    	<% cache(cache_key_for_products) do %>
-      <%= render partial: "product", locals: {product:product} %>
-      <% end %>
+		<% cache(cache_key_for_products) do %>
+	    <% @products.each do |product| %>
+	    	
+	    	<%= render partial: "product", locals: {product:product} %>
+	      
+	    <% end %>
     <% end %>
   </div> <!-- end container -->
 </div> <!-- end row -->
