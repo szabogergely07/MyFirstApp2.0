@@ -16,6 +16,9 @@
 	<div class="container new-prod">
 		<h3>Reviews</h3>
 	</div>
+
+	<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+	
 		<%= render partial: "comments", locals: {product:@product} %>
 		<%= will_paginate @comments, :class => 'container' %>
 </div>
