@@ -1,7 +1,7 @@
 
   <div class="container clearfix col-xs-12 col-md-6 product-unit">
     <% cache product do %>
-    <div><%= image_tag product.image_url, class: "img-responsive product-pic img-zoom", data_zoom_image: product.image_url %>
+    <div><%= image_tag product.image_url, class: "img-responsive product-pic" %>
     </div>
     <%= link_to product do %>
       <div class="product-describe">
