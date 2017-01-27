@@ -4,6 +4,5 @@ $("#total-review").hide();
 
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>");
 
-$('.product-reviews').prepend("<%= j render @comment %>");
 
 refreshRating();
