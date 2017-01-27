@@ -3,14 +3,12 @@
     <% cache @product do %>
     <div><%= image_tag @product.image_url, class: "img-responsive product-pic img-zoom", data_zoom_image: @product.image_url %>
     </div>
-    <%= link_to @product do %>
       <div class="product-describe">
         <h3><%= @product.name %></h3>
         <p><%= @product.description %></p>
         <p><%= @product.color %></p>
         <p><%= @product.price %></p>
       </div>
-    <% end %>
     <div class="container">
       <% if signed_in? && current_user.admin? %>
         <%= link_to 'Show', @product %>
@@ -19,7 +17,7 @@
       <% end %>
     </div>
     <% end %>
-  </div> <!-- end pruduct-unit -->
+</div> <!-- end pruduct-unit -->
 
 
 <div class="container clearfix col-xs-12 col-md-6 comment-box">
