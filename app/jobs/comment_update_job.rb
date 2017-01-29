@@ -3,6 +3,7 @@ class CommentUpdateJob < ApplicationJob
 
   def perform(comment, current_user)
 	  ProductChannel.broadcast_to(comment.product_id, comment: render_comment(comment, current_user), average_rating: comment.product.average_rating)
+	  $redis.set("total_comment_#{comment.product_id}", comments.count)
   end
 
   private

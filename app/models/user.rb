@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :orders
 	has_many :comments
+  has_many :payments
 
 	after_create :welcome_message
   	def welcome_message

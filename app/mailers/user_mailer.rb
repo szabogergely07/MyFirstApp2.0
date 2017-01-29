@@ -11,7 +11,12 @@ class UserMailer < ApplicationMailer
  	def welcome_email(user)
 	  @user = user
 	  mail(:to => user.email, 
-	      :subject => "Welcome to BikeWien!")
+	  	:subject => "Welcome to BikeWien!")
   end
 
+  def payment_email(user)
+  	@user = user
+  	mail(:to => user.email,
+  		:subject => "Thank you for your payment!")
+  end
 end

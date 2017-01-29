@@ -20,7 +20,10 @@ class Product < ApplicationRecord
 	end
 
 	def total_comment
-    $redis.set("totalComment", comments.count)
-    $redis.get("totalComment")
+		unless $redis.keys.include?("total_comment_#{id}")
+			$redis.set('total_comment_#{comment.product_id}', comments.count)				
+		end
+    	
+		$redis.get('total_comment_#{comment.product_id}')  
   end
 end
