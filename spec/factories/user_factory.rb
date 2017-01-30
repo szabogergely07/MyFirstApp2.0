@@ -10,10 +10,10 @@ FactoryGirl.define do
 	end
 
 	factory :admin, class: User do
-		email
-		password "qwertyu"
-		admin true
-		first_name "Admin"
-		last_name "User"
+			email
+			password "qwertyu"
+			admin true
+			first_name "Admin"
+			last_name "User"
 	end
 end
