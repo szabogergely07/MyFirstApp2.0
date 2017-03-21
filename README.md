@@ -15,4 +15,4 @@ Commercial Rails Application
 * System security with brakeman
 * System caching and performance optimization with Memcached and Redis
 
-Homepage: bikewien.herokuapp.com/
+Homepage: http://www.bikewien.herokuapp.com/
