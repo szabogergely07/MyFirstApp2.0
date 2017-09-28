@@ -5,7 +5,7 @@ class Product < ApplicationRecord
 	validates :price, presence: true, numericality: {only_integer: true}
 
 	has_many :orders
-	has_many :comments
+	has_many :comments, dependent: :nullify
 
 	def highest_rating_comment
 		comments.rating_desc.first
