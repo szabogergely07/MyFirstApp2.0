@@ -51,7 +51,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'omniauth-facebook'
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18'
 end
 
 gem 'devise'
